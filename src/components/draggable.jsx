@@ -46,7 +46,6 @@ const MusicPlayer = () => {
     const loadPlaylist = async () => {
       try {
         const entries = await readDir('Music', { baseDir: BaseDirectory.Home });
-        // Filtrer pour ne garder que les fichiers audio (par exemple, mp3, m4a, wav, flac)
         const audioExtensions = /\.(mp3|m4a|wav|flac)$/i;
         const songs = entries
           .filter((entry) => audioExtensions.test(entry.name))
@@ -70,13 +69,13 @@ const MusicPlayer = () => {
       const fetchMetadata = async (path) => {
         try {
           const fileContents = await readFile(path, { baseDir: BaseDirectory.Home });
-          const metadata = await parseBuffer(fileContents); // Utilisation directe de l'Uint8Array
+          const metadata = await parseBuffer(fileContents); 
           setMetadata(metadata);
 
           const blob = new Blob([fileContents], { type: 'audio/mp4' });
           const audioUrl = URL.createObjectURL(blob);
 
-          // Ici on met à jour la source de react-h5-audio-player via sa référence interne
+          // ici on met à jour la source de react-h5-audio-player via sa référence interne
           audioRef.current.audio.current.src = audioUrl;
         } catch (error) {
           console.error('Error reading file:', error);
@@ -266,7 +265,7 @@ const MusicPlayer = () => {
           )}
 
           <div className={styles.controls}>
-            {/* Remplacement de l'élément <audio> par react-h5-audio-player */}
+           
             <AudioPlayer
               ref={audioRef}
               autoPlay
