@@ -48,6 +48,21 @@ audiomotion-analyzer
 -  L'API lyrics.ovh a une limite de 100 req/heure
 -  Le visualiseur est gourmand en ressources
 
+## Comment utiliser
+
+1. **Télécharger** l'application
+2. Ouvrez le dossier `~/Music` et ajoutez vos fichiers audio
+3. Ouvrez l'application et attendez que le lecteur audio se charge
+4. Glissez-déposez des fichiers audio dans la zone de playlist
+5. Utilisez les boutons de contrôle pour naviguer dans la playlist
+
+## Comment Contribuer
+
+1. **Cloner** le dépôt : `git clone https://github.com/DevDhomm/WMP.git`
+2. **Allez dans le dossier** : `cd WMP`
+3. **Installer** les dépendances : `npm install`
+3. **Lancer** en mode développement : `npm run dev tauri`
+
 ## 📄 Licence
 
 MIT - Inclure les crédits pour :
