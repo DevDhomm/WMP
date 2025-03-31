@@ -1,4 +1,4 @@
-# 🎵 Music Player Component
+# 🎵 Windows Music Player (WMP)
 
 Lecteur audio interactif avec fonctionnalités avancées, intégré dans une application Tauri/React.
 
@@ -35,23 +35,23 @@ audiomotion-analyzer
 
 ## 💡 Notes Techniques
 
-Performance : Utilisation de useRef pour les références audio
-Sécurité :
-  Les fichiers sont lus via Tauri (sandboxé)
-  Les paroles utilisent une API externe (CORS géré)
-Animations :
-  Transition CSS pour les covers
-  Effets de flou dynamiques
+- **Performance : Utilisation de useRef pour les références audio
+- **Sécurité :
+    -Les fichiers sont lus via Tauri (sandboxé)
+    -Les paroles utilisent une API externe (CORS géré)
+- **Animations :
+    -Transition CSS pour les covers
+    -Effets de flou dynamiques
 
 ## 🚨 Limitations Connues
-  Format M4A nécessite parfois un rechargement
-  L'API lyrics.ovh a une limite de 100 req/heure
-  Le visualiseur est gourmand en ressources
+-  Format M4A nécessite parfois un rechargement
+-  L'API lyrics.ovh a une limite de 100 req/heure
+-  Le visualiseur est gourmand en ressources
 
 ## 📄 Licence
 
 MIT - Inclure les crédits pour :
-  AudioMotion
-  DnD Kit
-  Iconify
+- **AudioMotion
+- **DnD Kit
+- **Iconify
 
