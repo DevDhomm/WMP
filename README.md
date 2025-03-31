@@ -35,11 +35,11 @@ audiomotion-analyzer
 
 ## 💡 Notes Techniques
 
-- **Performance : Utilisation de useRef pour les références audio
-- **Sécurité :
+- **Performance** : Utilisation de useRef pour les références audio
+- **Sécurité** :
     -Les fichiers sont lus via Tauri (sandboxé)
     -Les paroles utilisent une API externe (CORS géré)
-- **Animations :
+- **Animations** :
     -Transition CSS pour les covers
     -Effets de flou dynamiques
 
@@ -51,7 +51,7 @@ audiomotion-analyzer
 ## 📄 Licence
 
 MIT - Inclure les crédits pour :
-- **AudioMotion
-- **DnD Kit
-- **Iconify
+- **AudioMotion**
+- **DnD Kit**
+- **Iconify**
 
